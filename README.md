@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
 
-## Project info
+# MAAR Journey — The Biography of MD Adil Rajon
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+A cinematic, single-page digital biography telling the life story of **MD Adil Rajon** — a British Bangladeshi student and self-taught web developer. The site traces a journey from Sylhet, Bangladesh to Birmingham, England, through chapters on faith, education, challenges, and vision for the future.
 
-## How can I edit this code?
+**Live site:** _add your Vercel URL here once deployed_
 
-There are several ways of editing your application.
+## About This Project
 
-**Use Lovable**
+MAAR Journey is a personal biography site designed and built by MD Adil Rajon. It combines editorial-style typography, full-bleed photography, and scroll-based animation to present a life story as a series of chapters — from childhood in Sylhet, to arrival in the UK, to the projects and ideas that define the author's work today.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Vite** — build tooling
+- **TypeScript** — type safety
+- **React 18** — UI framework
+- **Tailwind CSS** — styling
+- **shadcn/ui** — component primitives
+- **Framer Motion** — scroll and page animation
+- **React Router** — routing
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+Requires [Node.js](https://nodejs.org/) and npm.
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate into the project directory
+cd MAAR-Journy
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the local development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The site will be available at `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for production
 
-**Use GitHub Codespaces**
+```sh
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Output is generated in the `dist/` folder.
 
-## What technologies are used for this project?
+## Deployment
 
-This project is built with:
+This project is configured to deploy on [Vercel](https://vercel.com) with zero additional setup:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Push this repository to GitHub.
+2. Import the repository into Vercel.
+3. Vercel auto-detects the Vite framework preset — no custom build configuration needed.
+4. Deploy.
 
-## How can I deploy this project?
+A `vercel.json` is included to correctly handle client-side routing on refresh/deep links.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+src/
+  components/     Page sections (Hero, Biography, Journey, Education, etc.)
+  components/ui/  Reusable shadcn/ui primitives
+  hooks/          Custom React hooks
+  pages/          Route-level pages
+public/
+  images/         Biography photography assets
+```
 
-Yes, you can!
+## Author
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+**MD Adil Rajon**
+British Bangladeshi student and self-taught web developer.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## License
+
+Copyright © 2026 MD Adil Rajon. All rights reserved.
+
+See [LICENSE](./LICENSE) for full terms.
