@@ -147,7 +147,7 @@ export function Biography() {
             className="flex items-center"
           >
             <p className="text-base lg:text-lg text-gray-300 leading-relaxed">
-              In December 2020, aged around fifteen, Adil broke his left elbow
+              In December 2020, aged around Eleven, Adil broke his left elbow
               playing football on concrete. It was first treated with massage;
               doctors later confirmed a serious fracture that required
               bandaging and physical therapy. For several weeks he stepped away
